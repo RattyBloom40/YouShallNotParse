@@ -5,13 +5,15 @@ public abstract class Item
 
 	private String name;
 	private String description;
+	private final int weight;
 	private final int itemID;
 
-	public Item(String name, String description, int ID)
+	public Item(String name, String description, int ID, int weight)
 	{
 		this.name = name;
 		this.description = description;
 		this.itemID = ID;
+		this.weight = weight;
 	}
 
 	public String getName()
@@ -27,5 +29,10 @@ public abstract class Item
 	public int getID()
 	{
 		return itemID;
+	}
+
+	public int getWeight()
+	{
+		return weight;
 	}
 }

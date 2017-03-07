@@ -4,9 +4,9 @@ public class Battery extends Item
 {
 	private int power;
 	
-	public Battery(String name, String description, int ID)
+	public Battery(String name, String description, int ID, int weight)
 	{
-		super(name, description, ID);
+		super(name, description, ID, weight);
 		this.power = 100;
 	}
 
